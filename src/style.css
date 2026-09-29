@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f4f7f6; /* Fundo cinza bem claro e elegante */
+  background-color: #f4f7f6;
   color: #333333;
   display: flex;
   justify-content: center;
@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* Container principal simulando a tela de um celular */
 #root {
   width: 100%;
   max-width: 400px;
@@ -33,7 +32,7 @@ body {
 
 h1 {
   font-size: 1.5rem;
-  color: #2c5e43; /* Verde escuro sofisticado */
+  color: #2c5e43;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -52,13 +51,12 @@ p {
   margin-bottom: 32px;
 }
 
-/* Botão Premium */
 button {
-  background-color: #3b825b; /* Verde saúde */
+  background-color: #3b825b;
   color: white;
   border: none;
   padding: 16px 32px;
-  border-radius: 30px; /* Bordas arredondadas modernas */
+  border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -69,6 +67,6 @@ button {
 
 button:hover {
   background-color: #2c5e43;
-  transform: translateY(-2px); /* Animação leve ao passar o mouse */
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(59, 130, 91, 0.4);
 }
