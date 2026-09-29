@@ -1,72 +1,132 @@
-/* Importando uma fonte moderna e limpa (Inter) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-color: #f4f7f6;
-  color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f1e7;
+  color: #173b2b;
 }
 
-#root {
-  width: 100%;
-  max-width: 400px;
-  background-color: #ffffff;
+.aplicativo {
   min-height: 100vh;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  padding: 40px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #f7f1e7 0%,
+    #ffffff 100%
+  );
+}
+
+
+.topo {
+  padding: 25px;
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5rem;
-  color: #2c5e43;
-  margin-bottom: 20px;
-  font-weight: 700;
+.topo h1 {
+  font-size: 32px;
+  color: #173b2b;
+  margin: 0;
 }
 
-h2 {
-  font-size: 1.25rem;
-  color: #1a1a1a;
-  margin-bottom: 12px;
-  font-weight: 600;
+
+.principal {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
-p {
-  font-size: 0.95rem;
-  color: #666666;
-  line-height: 1.5;
-  margin-bottom: 32px;
-}
 
-button {
-  background-color: #3b825b;
-  color: white;
-  border: none;
-  padding: 16px 32px;
+.imagem-marina img {
+  width: 320px;
+  max-width: 100%;
   border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(59, 130, 91, 0.3);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-button:hover {
-  background-color: #2c5e43;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 91, 0.4);
+
+.conteudo {
+  max-width: 500px;
+}
+
+
+.conteudo h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+
+.conteudo p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #496154;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+.card strong {
+  font-size: 18px;
+}
+
+
+.card span {
+  color: #66756d;
+}
+
+
+.botao {
+  background: #4cff22;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.botao:hover {
+  transform: scale(1.03);
+}
+
+
+@media(max-width:800px){
+
+  .principal{
+    flex-direction: column;
+    text-align:center;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .conteudo h2{
+    font-size:30px;
+  }
+
 }
