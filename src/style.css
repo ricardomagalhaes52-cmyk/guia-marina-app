@@ -1,33 +1,74 @@
-body {
+/* Importando uma fonte moderna e limpa (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fffaf2;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-div {
+body {
+  background-color: #f4f7f6; /* Fundo cinza bem claro e elegante */
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal simulando a tela de um celular */
+#root {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 h1 {
-  font-size: 42px;
-  margin-top: 50px;
+  font-size: 1.5rem;
+  color: #2c5e43; /* Verde escuro sofisticado */
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 h2 {
-  color: #7b4b2a;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
 p {
-  font-size: 20px;
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 32px;
 }
 
+/* Botão Premium */
 button {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 25px;
-  background: #7b4b2a;
+  background-color: #3b825b; /* Verde saúde */
   color: white;
-  font-size: 18px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px; /* Bordas arredondadas modernas */
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 91, 0.3);
+}
+
+button:hover {
+  background-color: #2c5e43;
+  transform: translateY(-2px); /* Animação leve ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(59, 130, 91, 0.4);
 }
